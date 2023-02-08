@@ -6,6 +6,8 @@ Author: Jason Wang
 Date-Created: 2023-02-07
 '''
 
+
+'''
 import random 
 
 
@@ -15,7 +17,6 @@ for i in range(10):
     x = random.randint(1,10)
     print(x)
 
-'''
 The function random.randint(x,y) will select a random number from the given range
 x-y. You can then assign this randomly generated number from the given range onto a variable. 
 The code above selectes a random number from 1-10 and then prints it into the terminal, this is 
@@ -41,9 +42,47 @@ if they want to play again or exit the program. Adding a points counter is possi
 '''
 
 
+#Actual program
 
+import random
 
+newnumber = True
+points = 0 
 
+while True:  
+    if newnumber == True:
+        x = random.randint(1,100)
+        newnumber = False
+    try:
+        guess = int(input('''
+        Please guess a number from 1 - 100:
+        
+        '''))
+        if guess > x:
+            print("""
+            Your guess is to high please try again""")
+            pass
+        elif guess < x:
+            print("""
+            Your guess is to low please try again""")
+            pass
+        else: 
+            print("You guessed correctly!")
+            points += 1
+            print("You currently have:", points, "points")
+            choice = input("Would you like to play again? Y/N")
+            if choice == "y" or choice == "Y":
+                newnumber = True
+                pass
+            elif choice == "n" or choice == "N":
+                print("Thank you for playing!")
+                break
+            else:
+                print("unknown option, now restarting program")
+                newnumber = True
+                pass
+    except:
+        print("Please insert a valid whole number from 1 - 100")
 
 
 

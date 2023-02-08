@@ -15,19 +15,19 @@ date created: 2023-02-07
 
 x = 5
 y = 7
-#integer
+#integer is a whole number
 
 float1 = 8.5
 float2 = 5.3
-#floats
+#floats number with decimals
 
 string1 = "Hello World"
 string2 = "8"
-#string
+#string is a string of text
 
 true  = True 
 false = False
-#booleans
+#booleans are true and false statements
 
 '''
 addtion = +
