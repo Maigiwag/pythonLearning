@@ -64,7 +64,6 @@ a.description()
 a.speak("woof")
 print(a)
 
-
 a2 = ShibaInu("Doge2", 8)
 b2 = Husky("Miles2", 10)
 a2.speak()
