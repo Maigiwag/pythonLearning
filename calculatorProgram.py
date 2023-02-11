@@ -73,9 +73,6 @@ def displayAnswer(answer):
     print("The solution to your calculation is : ", answer)    
 
 
-
-
-
 ##---MAIN PROGRAM CODE---##
 
 while True:
